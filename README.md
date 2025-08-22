@@ -105,6 +105,47 @@ Capture gesture frames → save into dataset folders → label later.
 
 ---
 
+## 🖼️ Demo
+![V_1752583739738](https://github.com/user-attachments/assets/5f7764e0-c27a-47da-9a99-0c91cd4e429b)
+
+---
+
+## 🔧 .gitignore
+flaskenv/
+venv/
+__pycache__/
+*.pyc
+*.pkl
+*.onnx
+*.h5
+*.pth
+*.dll
+*.so
+*.lib
+runs/
+
+---
+
+## 📜 requirements.txt (minimal)
+flask
+ultralytics
+opencv-python
+numpy
+torch
+torchvision
+
+---
+
+## 📜 requirements.txt (minimal)
+flask
+ultralytics
+opencv-python
+numpy
+torch
+torchvision
+
+---
+
 ## 📜 requirements.txt (minimal)
 flask
 ultralytics
