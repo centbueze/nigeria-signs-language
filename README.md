@@ -20,6 +20,7 @@ A **Flask web app** serves real-time predictions from the trained model.
 nigeria-signs-language/
 
 │── app.py # Flask server (inference)
+
 │── requirements.txt # Python dependencies
 
 │── README.md
