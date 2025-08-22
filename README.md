@@ -112,8 +112,11 @@ Capture gesture frames → save into dataset folders → label later.
 
 ## 🔧 .gitignore
 flaskenv/
+
 venv/
+
 __pycache__/
+
 *.pyc
 *.pkl
 *.onnx
