@@ -36,16 +36,13 @@ nigeria-signs-language/
 ---
 
 ## ⚙️ Environment & Installation
-### 1) Clone
+Clone
 ```bash
 git clone https://github.com/centbueze/nigeria-signs-language.git
 cd nigeria-signs-language
 
 ---
 
-## ⚙️ Environment & Installation
-
----
 
 
 
