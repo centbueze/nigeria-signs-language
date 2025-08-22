@@ -34,32 +34,38 @@ nigeria-signs-language/
 │── esp32_cam/ # Arduino sketches & notes (data collection)
 
 ---
+
 ## ⚙️ Environment & Installation
 
 ### 1) Clone
 ```bash
 git clone https://github.com/centbueze/nigeria-signs-language.git
 cd nigeria-signs-language
+
 ---
 
-# Create & Activate Virtual Environment
+**# Create & Activate Virtual Environment**
 python -m venv flaskenv
 .\flaskenv\Scripts\activate
 
 ---
+
 # python -m venv flaskenv
 .\flaskenv\Scripts\activate
 
 ---
+
 # Linux/Mac:
 python3 -m venv flaskenv
 source flaskenv/bin/activate
 
 ---
+
 # Install Dependencies
 pip install -r requirements.txt
 
 ---
+
 # 📜 requirements.txt (minimal)
 flask
 ultralytics
@@ -67,15 +73,19 @@ opencv-python
 numpy
 torch
 torchvision
+
 ---
+
 # Then Install
 pip install -r requirements.txt
 
 ---
+
 # 🚀 Run the Flask App
 python app.py
 
 ---
+
 # Open in your browser:
 http://127.0.0.1:5000/
 
@@ -85,6 +95,7 @@ from ultralytics import YOLO
 model = YOLO("best.pt")
 
 ---
+
 # Auto-detect latest best.pt:
 import glob, os
 from ultralytics import YOLO
@@ -99,10 +110,12 @@ print(f"Using model: {model_path}")
 model = YOLO(model_path)
 
 ---
+
 # Train (from scratch or fine-tune)
 yolo detect train data=dataset/data.yaml model=yolov8n.pt epochs=50 imgsz=640
 
 ---
+
 # dataset/data.yaml example:
 path: ./dataset
 train: train/images
@@ -121,6 +134,7 @@ dataset/
     ├── images/
     └── labels/
 ---
+
 # 📲 ESP32-CAM Data Collection (Arduino)
 Install Arduino IDE + ESP32 board support (Boards Manager → “esp32”).
 
@@ -135,10 +149,12 @@ Visit http://<ESP32_IP>/ to preview stream.
 Capture frames by sign → store in dataset folders → label later.
 
 ---
+
 # 🖼️ Demo
 ![V_1752583739738](https://github.com/user-attachments/assets/b238f69e-fa61-4628-b266-e7c5625c2a02)
  
 ---
+
 # 🔧 .gitignore
 flaskenv/
 venv/
@@ -162,6 +178,7 @@ best.pt not found → fix model path or use auto-detect snippet.
 Wrong Python used → ensure (flaskenv) is active → run python --version.
 
 ---
+
 # 🙏 Acknowledgements
 Ultralytics YOLOv8
 
