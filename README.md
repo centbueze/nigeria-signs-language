@@ -35,10 +35,13 @@ nigeria-signs-language/
 
 ---
 
-## ⚙️ Environment & Installation
-```bash
-git clone https://github.com/centbueze/nigeria-signs-language.git
-cd nigeria-signs-language
+## 📜 requirements.txt (minimal)
+flask
+ultralytics
+opencv-python
+numpy
+torch
+torchvision
 
 ---
 
