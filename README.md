@@ -55,7 +55,7 @@ python -m venv flaskenv
 
 ---
 
-## Linux/Mac:
+## **Linux/Mac**:
 python3 -m venv flaskenv
 source flaskenv/bin/activate
 
@@ -189,22 +189,3 @@ Nigerian Sign Language Community
 Push rejected (large files) → use Git LFS or don’t commit heavy models.
 
 
-# Nigerian Sign Language (NSL) Recognition with YOLOv8 and ESP32-CAM
-
-This project recognizes **Nigerian Sign Language (NSL)** hand gestures using an **ESP32-CAM** for data collection and a **YOLOv8** model for training/inference.  
-A **Flask web app** serves real-time predictions from the trained model.
-
-🔗 **Main Repository:** https://github.com/centbueze/nigeria-signs-language
-
----
-
-## 📌 Project Overview
-- 📷 **Data Collection:** Images captured with **ESP32-CAM** (programmed via **Arduino IDE**).
-- 📝 **Annotation:** Labeled with LabelImg/Roboflow in **YOLO format**.
-- 🤖 **Model Training:** Trained a **YOLOv8** model producing `best.pt`.
-- 🌍 **Deployment:** **Flask** API for real-time hand gesture recognition.
-- 🎯 **Goal:** Practical NSL recognition to support accessibility & inclusion.
-
----
-
-## 📂 Repository Structure
