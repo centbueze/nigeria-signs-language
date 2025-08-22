@@ -36,7 +36,21 @@ nigeria-signs-language/
 ---
 
 ## ⚙️ Environment & Installation
+```bash
+# Clone repository
+git clone https://github.com/centbueze/nigeria-signs-language.git
+cd nigeria-signs-language
 
+# Create & activate virtual environment (Windows)
+python -m venv flaskenv
+.\flaskenv\Scripts\activate
+
+# Linux/Mac
+python3 -m venv flaskenv
+source flaskenv/bin/activate
+
+# Install dependencies
+pip install -r requirements.txt
 ---
 
 ## ⚙️ Environment & Installation
