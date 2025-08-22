@@ -45,6 +45,13 @@ torchvision
 
 ---
 
+## 🧠 Model Path (important)
+from ultralytics import YOLO
+model_path = r"output/nsl_yolo_train2/weights/best.pt"
+model = YOLO(model_path)
+
+---
+
 
 
 
