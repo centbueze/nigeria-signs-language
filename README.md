@@ -47,5 +47,41 @@ nigeria-signs-language/
 
 ---
 
+## ⚙️ Environment & Installation
+
+---
+
+## ⚙️ Environment & Installation
+
+---
+
+## ⚙️ Environment & Installation
+
+---
+
+## ⚙️ Environment & Installation
+
+---
+
+## ⚙️ Environment & Installation
+
+---
+
+## ⚙️ Environment & Installation
+
+---
+
+## ⚙️ Environment & Installation
+
+---
+
+## ⚙️ Environment & Installation
+
+---
+
+## ⚙️ Environment & Installation
+
+---
+
 
 
