@@ -18,19 +18,27 @@ A **Flask web app** serves real-time predictions from the trained model.
 
 ## 📂 Repository Structure
 nigeria-signs-language/
+
 │── app.py # Flask server (inference)
 │── requirements.txt # Python dependencies
+
 │── README.md
+
 │── .gitignore
+
 │── dataset/ # Optional: sample or link to dataset
 │ ├── train/images/ train/labels/
 │ └── val/images/ val/labels/
+
 │── output/
 │ └── nsl_yolo_train2/
 │ └── weights/
 │ └── best.pt # Trained YOLOv8 weights (provide or link)
+
 │── templates/ # Flask HTML (if UI is used)
+
 │── static/ # CSS/JS/assets (if UI is used)
+
 │── esp32_cam/ # Arduino sketches & notes (data collection)
 
 ---
@@ -52,7 +60,9 @@ torchvision
 
 ## 🧠 Model Path (important)
 from ultralytics import YOLO
+
 model_path = r"output/nsl_yolo_train2/weights/best.pt"
+
 model = YOLO(model_path)
 
 ---
@@ -72,18 +82,24 @@ yolo detect train data=dataset/data.yaml model=yolov8n.pt epochs=50 imgsz=640
 
 ## 📄Dataset/data.yaml
 path: ./dataset
+
 train: train/images
+
 val: val/images
+
 nc: 26
+
 names: [A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z]
 
 ---
 
 ## 📊 Dataset Structure
 dataset/
+
 ├── train/
 │   ├── images/
 │   └── labels/
+
 └── val/
     ├── images/
     └── labels/
