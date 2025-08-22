@@ -37,7 +37,7 @@ nigeria-signs-language/
 
 ## ⚙️ Environment & Installation
 
-### 1) Clone
+### Clone
 ```bash
 git clone https://github.com/centbueze/nigeria-signs-language.git
 cd nigeria-signs-language
@@ -50,23 +50,23 @@ python -m venv flaskenv
 
 ---
 
-# python -m venv flaskenv
+## python -m venv flaskenv
 .\flaskenv\Scripts\activate
 
 ---
 
-# Linux/Mac:
+## Linux/Mac:
 python3 -m venv flaskenv
 source flaskenv/bin/activate
 
 ---
 
-# Install Dependencies
+## Install Dependencies
 pip install -r requirements.txt
 
 ---
 
-# 📜 requirements.txt (minimal)
+## 📜 requirements.txt (minimal)
 flask
 ultralytics
 opencv-python
@@ -76,27 +76,27 @@ torchvision
 
 ---
 
-# Then Install
+## Then Install
 pip install -r requirements.txt
 
 ---
 
-# 🚀 Run the Flask App
+## 🚀 Run the Flask App
 python app.py
 
 ---
 
-# Open in your browser:
+## Open in your browser:
 http://127.0.0.1:5000/
 
 ---
-# 🧠 Model Path (important)
+## 🧠 Model Path (important)
 from ultralytics import YOLO
 model = YOLO("best.pt")
 
 ---
 
-# Auto-detect latest best.pt:
+## Auto-detect latest best.pt:
 import glob, os
 from ultralytics import YOLO
 
@@ -111,12 +111,12 @@ model = YOLO(model_path)
 
 ---
 
-# Train (from scratch or fine-tune)
+## Train (from scratch or fine-tune)
 yolo detect train data=dataset/data.yaml model=yolov8n.pt epochs=50 imgsz=640
 
 ---
 
-# dataset/data.yaml example:
+## dataset/data.yaml example:
 path: ./dataset
 train: train/images
 val: val/images
@@ -125,7 +125,7 @@ names: [A, B, C,D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y
 
 ---
 
-# 📊 Dataset
+## 📊 Dataset
 dataset/
 ├── train/
 │   ├── images/
@@ -135,7 +135,7 @@ dataset/
     └── labels/
 ---
 
-# 📲 ESP32-CAM Data Collection (Arduino)
+## 📲 ESP32-CAM Data Collection (Arduino)
 Install Arduino IDE + ESP32 board support (Boards Manager → “esp32”).
 
 Use CameraWebServer or custom sketch in esp32_cam/.
@@ -150,12 +150,12 @@ Capture frames by sign → store in dataset folders → label later.
 
 ---
 
-# 🖼️ Demo
+## 🖼️ Demo
 ![V_1752583739738](https://github.com/user-attachments/assets/b238f69e-fa61-4628-b266-e7c5625c2a02)
  
 ---
 
-# 🔧 .gitignore
+## 🔧 .gitignore
 flaskenv/
 venv/
 __pycache__/
@@ -170,7 +170,7 @@ __pycache__/
 runs/
 
 ---
-# 🧩 Troubleshooting
+## 🧩 Troubleshooting
 No module named 'flask' → run pip install -r requirements.txt inside env.
 
 best.pt not found → fix model path or use auto-detect snippet.
@@ -179,7 +179,7 @@ Wrong Python used → ensure (flaskenv) is active → run python --version.
 
 ---
 
-# 🙏 Acknowledgements
+## 🙏 Acknowledgements
 Ultralytics YOLOv8
 
 ESP32-CAM + Arduino IDE
