@@ -52,6 +52,57 @@ model = YOLO(model_path)
 
 ---
 
+## 🧪 Quick Inference (CLI)
+yolo predict model=output/nsl_yolo_train2/weights/best.pt source=0
+# or
+yolo predict model=output/nsl_yolo_train2/weights/best.pt source="sample.jpg"
+
+---
+
+## 🎯 Training
+yolo detect train data=dataset/data.yaml model=yolov8n.pt epochs=50 imgsz=640
+
+
+---
+
+## 📄
+path: ./dataset
+train: train/images
+val: val/images
+nc: 26
+names: [A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z]
+
+---
+
+## 📜 requirements.txt (minimal)
+flask
+ultralytics
+opencv-python
+numpy
+torch
+torchvision
+
+---
+
+## 📜 requirements.txt (minimal)
+flask
+ultralytics
+opencv-python
+numpy
+torch
+torchvision
+
+---
+
+## 📜 requirements.txt (minimal)
+flask
+ultralytics
+opencv-python
+numpy
+torch
+torchvision
+
+---
 
 
 
