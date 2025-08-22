@@ -37,10 +37,15 @@ nigeria-signs-language/
 
 ## 📜 requirements.txt (minimal)
 flask
+
 ultralytics
+
 opencv-python
+
 numpy
+
 torch
+
 torchvision
 
 ---
