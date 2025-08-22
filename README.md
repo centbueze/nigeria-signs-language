@@ -129,38 +129,37 @@ runs/
 
 ---
 
-## 📜 requirements.txt (minimal)
-flask
-ultralytics
-opencv-python
-numpy
-torch
-torchvision
+## 🧩 Troubleshooting
+pip install -r requirements.txt
 
 ---
 
-## 📜 requirements.txt (minimal)
-flask
-ultralytics
-opencv-python
-numpy
-torch
-torchvision
+## 🙏 Acknowledgements
+Ultralytics YOLOv8
+ESP32-CAM + Arduino IDE
+Nigerian Sign Language Community
+GitHub LFS (Large Files) for handling .pt models
 
 ---
 
-## 📜 requirements.txt (minimal)
-flask
-ultralytics
-opencv-python
-numpy
-torch
-torchvision
+## 🐧🍎 Linux / Mac
+```bash
+python3 -m venv flaskenv
+source flaskenv/bin/activate
+```
 
 ---
 
+## 🚀 Run the Flask App
+python app.py
 
+---
 
+## 🌐 Open in your browser
+[Ultralytics YOLOv8
+ESP32-CAM + Arduino IDE
+Nigerian Sign Language Community
+GitHub LFS (Large Files) for handling .pt models](http://127.0.0.1:5000/)
 
-
+---
 
