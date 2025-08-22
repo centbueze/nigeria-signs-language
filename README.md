@@ -65,7 +65,7 @@ yolo detect train data=dataset/data.yaml model=yolov8n.pt epochs=50 imgsz=640
 
 ---
 
-## 📄
+## 📄Dataset/data.yaml
 path: ./dataset
 train: train/images
 val: val/images
@@ -74,23 +74,29 @@ names: [A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, 
 
 ---
 
-## 📜 requirements.txt (minimal)
-flask
-ultralytics
-opencv-python
-numpy
-torch
-torchvision
+## 📊 Dataset Structure
+dataset/
+├── train/
+│   ├── images/
+│   └── labels/
+└── val/
+    ├── images/
+    └── labels/
 
 ---
 
-## 📜 requirements.txt (minimal)
-flask
-ultralytics
-opencv-python
-numpy
-torch
-torchvision
+## 📲 ESP32-CAM Data Collection (Arduino)
+Install Arduino IDE + ESP32 board support (Boards Manager → “esp32”).
+
+Flash CameraWebServer or custom sketch in esp32_cam/.
+
+Select ESP32-CAM board + correct COM port → Upload.
+
+Open Serial Monitor → copy ESP32 IP address.
+
+Visit http://<ESP32_IP>/ → live stream.
+
+Capture gesture frames → save into dataset folders → label later.
 
 ---
 
